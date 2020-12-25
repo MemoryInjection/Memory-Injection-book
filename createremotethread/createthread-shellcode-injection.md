@@ -186,7 +186,7 @@ int main(int argc, char **argv){
 
 {% tab title="Powershell" %}
 {% code title="Shellcode-Process-Injector.ps1" %}
-```text
+```powershell
 $Kernel32 = @"
 using System;
 using System.Runtime.InteropServices;
