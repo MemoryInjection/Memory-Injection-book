@@ -1,4 +1,4 @@
-# CreateThread Shellcode Injection
+# CreateRemoteThread Shellcode Injection
 
 {% tabs %}
 {% tab title="C\#" %}
@@ -360,4 +360,14 @@ Function.new(kernel32['WaitForSingleObject'], [4,4], 4).call(thread, -1)
 {% endcode %}
 {% endtab %}
 {% endtabs %}
+
+
+
+## References
+
+
+
+{% embed url="https://www.ired.team/offensive-security/code-injection-process-injection/process-injection" %}
+
+
 
