@@ -361,7 +361,59 @@ Function.new(kernel32['WaitForSingleObject'], [4,4], 4).call(thread, -1)
 {% endtab %}
 {% endtabs %}
 
+{% tabs %}
+{% tab title="First Tab" %}
 
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+
+{% tab title="" %}
+
+{% endtab %}
+
+{% tab title="" %}
+
+{% endtab %}
+
+{% tab title="" %}
+
+{% endtab %}
+
+{% tab title="" %}
+
+{% endtab %}
+
+{% tab title="" %}
+
+{% endtab %}
+
+{% tab title="" %}
+
+{% endtab %}
+
+{% tab title="" %}
+
+{% endtab %}
+
+{% tab title="" %}
+
+{% endtab %}
+
+{% tab title="" %}
+
+{% endtab %}
+
+{% tab title="" %}
+
+{% endtab %}
+
+{% tab title="" %}
+
+{% endtab %}
+{% endtabs %}
 
 ## References
 
