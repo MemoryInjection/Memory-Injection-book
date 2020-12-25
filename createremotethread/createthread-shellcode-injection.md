@@ -192,7 +192,7 @@ int main(int argc, char **argv){
 
 {% tab title="Powershell" %}
 {% code title="Shellcode-Process-Injector.ps1" %}
-```
+```powershell
 
 ```
 {% endcode %}
